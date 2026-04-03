@@ -1,6 +1,6 @@
 package com.example.demojwt.entity;
 
-import com.example.demojwt.constant.ERoll;
+import com.example.demojwt.constant.ERole;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -18,7 +18,7 @@ public class RoleEntity {
 	
 	@Enumerated(EnumType.STRING)
 	@Column
-	private ERoll name;
+	private ERole name;
 	
 
 }

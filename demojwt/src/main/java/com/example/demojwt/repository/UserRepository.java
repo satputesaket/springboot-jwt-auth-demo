@@ -7,6 +7,8 @@ import com.example.demojwt.entity.UserEntity;
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
-    Optional<UserEntity> findByEmail(String email);
-    Boolean existsByEmail(String email);
+    
+	Optional<UserEntity> findByEmail(String email);
+    
+	Boolean existsByEmail(String email);
 }
