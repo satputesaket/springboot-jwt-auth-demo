@@ -101,93 +101,7 @@ src/main/java
 6. JWT Filter validates token for every protected request
 7. Access is granted based on user roles
 
----
 
-# 🔑 API Endpoints
-
-## Authentication APIs
-
-### Signup
-
-```http
-POST /api/auth/signup
-```
-
-Request:
-
-```json
-{
-  "username": "john",
-  "email": "john@example.com",
-  "password": "password123",
-  "role": ["user"]
-}
-```
-
----
-
-### Signin
-
-```http
-POST /api/auth/signin
-```
-
-Request:
-
-```json
-{
-  "username": "john",
-  "password": "password123"
-}
-```
-
-Response:
-
-```json
-{
-  "token": "jwt-token",
-  "type": "Bearer",
-  "id": 1,
-  "username": "john",
-  "email": "john@example.com",
-  "roles": ["ROLE_USER"]
-}
-```
-
----
-
-## Test APIs
-
-### Public Endpoint
-
-```http
-GET /api/test/all
-```
-
-### User Endpoint
-
-```http
-GET /api/test/user
-```
-
-### Admin Endpoint
-
-```http
-GET /api/test/admin
-```
-
----
-
-# ⚙️ Security Features
-
-- Stateless Authentication using JWT
-- BCrypt Password Encoding
-- Custom Unauthorized Handler
-- Secure API Endpoint Protection
-- Role-Based Access Control
-- Request Filtering using JWT Filter
-
----
 
 # ▶️ Running the Application
 
@@ -231,22 +145,7 @@ Application starts on:
 http://localhost:8080
 ```
 
----
 
-# 🧪 Testing with Postman
-
-1. Register User
-2. Login User
-3. Copy JWT Token
-4. Add Authorization Header
-
-```text
-Authorization: Bearer <jwt-token>
-```
-
-5. Access Protected APIs
-
----
 
 # 📌 Key Learning Concepts
 
@@ -260,42 +159,7 @@ Authorization: Bearer <jwt-token>
 - DTO Design Pattern
 - Repository-Service-Controller Pattern
 
----
 
-# 📈 Resume Value
-
-This project is valuable for showcasing:
-
-- Backend API Development
-- Security Implementation
-- Enterprise Java Concepts
-- REST API Design
-- Authentication & Authorization
-- Spring Ecosystem Knowledge
-
-Especially useful for:
-
-- Java Backend Engineer Roles
-- Spring Boot Developer Roles
-- Microservices Development
-- Enterprise Application Development
-
----
-
-# 🔮 Possible Enhancements
-
-- Refresh Tokens
-- Email Verification
-- OAuth2 Login
-- Swagger/OpenAPI Documentation
-- Docker Support
-- Redis Token Blacklisting
-- Rate Limiting
-- Unit & Integration Tests
-- Role Management APIs
-- User Profile APIs
-
----
 
 # 👨‍💻 Author
 
